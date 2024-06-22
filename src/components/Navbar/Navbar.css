@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: "Outfit", sans-serif;
+    cursor: pointer;
+}
+.navbar_right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.navbar_right img{
+cursor: pointer;
+}
+.sign_in_btn{
+    padding: 8px 15px;
+    border: 1px solid #ff4c24;
+    color: #ff4c24;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.sign_in_btn:hover{
+    background-color: #ff4c24;
+    color: white;
+}
+.navbar .active{
+    border-bottom: 2px solid #ff4c24;
+    padding-bottom: 4px;
+}
+.navbar_basket_icon{
+    position: relative;
+}
+.navbar_basket_icon .dot{
+    min-height: 10px;
+    min-width: 10px;
+    position: absolute;
+    background-color: #ff4c24;
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+    color: white;
+}
