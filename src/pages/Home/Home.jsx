@@ -7,6 +7,7 @@ import ExploreMenu from '../../components/ExploreMenu/ExploreMenu'
 const Home = () => {
 
   const [category,setCategory] = useState("all")
+  
   return (
     <div>
     <Header/>

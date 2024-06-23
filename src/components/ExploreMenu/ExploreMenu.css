@@ -43,3 +43,12 @@
     background-color: #e2e2e2;
     border: none;
 }
+.exploreMenuListItem .active{
+    border: 4px solid #ff4c24;
+    padding: 2px;
+}
+.exploreMenuListItem .activeText{
+    color: white;
+    background-color: #ff4c24;
+    border-radius: 10px
+}
