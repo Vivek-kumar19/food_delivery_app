@@ -5,11 +5,11 @@ const menuSlice = createSlice({
   initialState: [],
   reducers: {
     addMenuList: (state, action) => {
-      state.push({ id: Date.now(), name: action.payload, completed: false });
+      state.push({ data : action.payload});
     },
     
   }
 });
 
-export const { addTask, toggleTask, deleteTask } = menuSlice.actions;
+export const { addMenuList } = menuSlice.actions;
 export default menuSlice.reducer;

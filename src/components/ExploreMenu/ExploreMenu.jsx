@@ -1,8 +1,17 @@
 import React from 'react'
 import './ExploreMenu.css'
 import { menu_list } from '../../assets/frontend_assets/assets'
+import { addMenuList } from '../../store/reducers/menuSlice'
+import { useDispatch } from 'react-redux'
 
 const ExploreMenu = ({category,setCategory}) => {
+
+  const dispatch = useDispatch();
+
+  const addMenuHandler = (res) =>{
+    dispatch(addMenuList("menu_list"));
+  };
+
   return (
     <div className='exploreMenu' id='exploreMenu' >
      <h1>Explore our menu</h1>
@@ -13,7 +22,7 @@ const ExploreMenu = ({category,setCategory}) => {
     {
       menu_list.map((item,index)=>{
         return (
-          <div onClick={()=>setCategory(prev=>prev===item.menu_name?"All":item.menu_name)} key={index} className='exploreMenuListItem'>
+          <div onClick={()=>setCategory(prev=>prev===item.menu_name?"All":item.menu_name)} key={index} className='exploreMenuListItem' >
             <img className={category===item.menu_name?"active":""} src={item.menu_image} alt={item.menu_image}  />
             <p className={category===item.menu_name?"activeText":""}>{item.menu_name}</p>
           </div>
@@ -22,6 +31,7 @@ const ExploreMenu = ({category,setCategory}) => {
     }
      </div>
      <hr/>
+     <div className='btn' onClick={addMenuHandler}>Add Menu</div>
     </div>
   )
 }
