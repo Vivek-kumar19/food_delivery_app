@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import './FoodDisplay.css'
 import { StoreContext } from '../../context/StoreContext'
+import FoodItem from '../FoodItem/FoodItem'
 
 
 function FoodDisplay({category}) {
@@ -14,7 +15,7 @@ function FoodDisplay({category}) {
     <div className='food-display-list'>
     {
         food_list.map((item,index)=>{
-          return  <p key={index}>{item.name}</p>
+          return  <FoodItem key={index} id={item._id} name={item.name} price={item.price} description={item.description} image={item.image} />
         })
     }
     </div>

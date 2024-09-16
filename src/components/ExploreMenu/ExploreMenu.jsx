@@ -31,7 +31,7 @@ const ExploreMenu = ({category,setCategory}) => {
     }
      </div>
      <hr/>
-     <div className='btn' onClick={addMenuHandler}>Add Menu</div>
+     {/* <div className='btn' onClick={addMenuHandler}>Add Menu</div> */}
     </div>
   )
 }
