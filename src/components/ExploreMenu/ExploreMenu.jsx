@@ -1,19 +1,12 @@
 import React from 'react'
 import './ExploreMenu.css'
 import { menu_list } from '../../assets/frontend_assets/assets'
-import { addMenuList } from '../../store/reducers/menuSlice'
-import { useDispatch } from 'react-redux'
+
 
 const ExploreMenu = ({category,setCategory}) => {
 
-  const dispatch = useDispatch();
-
-  const addMenuHandler = (res) =>{
-    dispatch(addMenuList("menu_list"));
-  };
-
   return (
-    <div className='exploreMenu' id='exploreMenu' >
+    <div className='exploreMenu' id='explore-menu' >
      <h1>Explore our menu</h1>
      <p className='exploreMenuText'>
      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

@@ -52,3 +52,10 @@
     background-color: #ff4c24;
     border-radius: 10px
 }
+
+@media (max-width:1050px){
+    .exploreMenuText{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
